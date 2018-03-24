@@ -11,10 +11,11 @@ const logout = () => {
   return { type: 'LOGOUT' };
 };
 
-export const registerUser = (email, password, passwordConfirmation, history) => {
+export const registerUser = (name, email, password, passwordConfirmation, history) => {
   return dispatch => {
-    axios.post('/api/auth', { email, password, password_confirmation: passwordConfirmation })
+    axios.post('/api/auth', { name, email, password, password_confirmation: passwordConfirmation })
       .then(res => {
+        debugger
         const { data: { data: user }, headers } = res;
         dispatch(setHeaders(headers));
         dispatch(login(user));

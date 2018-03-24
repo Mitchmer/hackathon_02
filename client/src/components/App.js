@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NoMatch from './NoMatch';
 // import NavBar from './NavBar';
 import Login from './Login';
+import Profile from './Profile';
 import About from './About';
 import AuthRoute from './AuthRoute';
 import Register from './Register';
@@ -25,6 +26,7 @@ class App extends Component {
             <AuthRoute exact path='/login' component={Login} />
             <AuthRoute exact path='/register' component={Register} />
             <Route exact path='/about' component={About} />
+            <ProtectedRoute exact path='/profile' component={Profile} />
             <Route component={NoMatch} />
           </Switch>
         </FetchUser>
