@@ -33,6 +33,9 @@ class About extends Component {
         <Segment>
           <Header as="h4">Upcoming Events</Header>
         </Segment>
+        <Segment>
+          <Header as="h4">Follow Us</Header>
+        </Segment>
       </div>
     )
   }
