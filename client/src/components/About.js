@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import NavBar from './NavBar';
 import { 
   Header,
@@ -38,7 +37,7 @@ class About extends Component {
         </Segment>
         <Segment>
           <Header as="h4">Follow Us</Header>
-          <img src="" alt="Girl in a jacket">
+          <img src="" alt="Girl in a jacket"/>
         </Segment>
       </div>
     )
