@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NoMatch from './NoMatch';
-import NavBar from './NavBar';
+// import NavBar from './NavBar';
 import Login from './Login';
 import About from './About';
 import AuthRoute from './AuthRoute';
@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
+
         <Flash />
         <FetchUser>
           <Switch>
