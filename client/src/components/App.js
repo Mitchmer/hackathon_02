@@ -3,14 +3,14 @@ import NoMatch from './NoMatch';
 import NavBar from './NavBar';
 import Login from './Login';
 import About from './About';
-import Menu from './Menu';
+import AuthRoute from './AuthRoute'
+import FetchUser from './FetchUser'
 import Register from './Register';
 import Flash from './Flash';
 import Home from './Home';
 import ProtectedRoute from './ProtectedRoute';
-import AuthRoute from './AuthRoute';
-import FetchUser from './FetchUser';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, } from 'react-router-dom';
+
 
 class App extends Component {
   render() {
