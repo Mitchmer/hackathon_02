@@ -1,7 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { List, Header, Divider } from 'semantic-ui-react'
-import { getItems } from '../actions/items'
+import { getItems } from '../actions/items';
+import Menu from './Menu';
 
 class Order extends React.Component {
   state = { order: [] }
