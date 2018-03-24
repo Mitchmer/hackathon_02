@@ -6,6 +6,7 @@ import About from './About';
 import Menu from './Menu'
 import Register from './Register';
 import Flash from './Flash';
+import Order from './Order';
 import Home from './Home';
 import RealMenu from './RealMenu'
 import Order from './Order'
