@@ -39,7 +39,7 @@ class About extends Component {
             <br/>
             <Header as="h4" textAlign="Left">Basic Info</Header>
             <div >
-              565 E 2100 S 
+              565 E 2100 S
             <br/>
               Salt Lake City, UT 84106
             <br/>
@@ -53,9 +53,9 @@ class About extends Component {
               <a href="https://www.google.com/maps/place/565+Firehouse/@40.7256923,-111.8769849,17z/data=!3m1!4b1!4m5!3m4!1s0x87528ab9882e4d53:0xf67f854b36163cf6!8m2!3d40.7256923!4d-111.8747962" >
                 Directions
               </a>
-            
+
               <Header as="h4">Upcoming Events</Header>
-            
+
             <div>
               <Header as="h4">Follow Us</Header>
               <a href="https://twitter.com/BubbasFirehouse">
