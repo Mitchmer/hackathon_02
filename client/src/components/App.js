@@ -9,8 +9,10 @@ import Register from './Register';
 import Flash from './Flash';
 import Home from './Home';
 import ProtectedRoute from './ProtectedRoute';
-import { Switch, Route, } from 'react-router-dom';
-
+import AuthRoute from './AuthRoute';
+import FetchUser from './FetchUser';
+import { Switch, Route } from 'react-router-dom';
+import Menu from './Menu';
 
 class App extends Component {
   render() {
