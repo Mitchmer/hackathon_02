@@ -3,7 +3,7 @@ import NoMatch from './NoMatch';
 import NavBar from './NavBar';
 import Login from './Login';
 import About from './About';
-import AuthRoute from './AuthRoute'
+import AuthRoute from './AuthRoute';
 import Register from './Register';
 import Flash from './Flash';
 import Home from './Home';
