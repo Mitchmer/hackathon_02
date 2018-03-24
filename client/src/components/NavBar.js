@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Menu } from 'semantic-ui-react';
+import { Menu, Image } from 'semantic-ui-react';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { handleLogout } from '../actions/auth';
@@ -36,9 +36,9 @@ class NavBar extends Component {
       <div>
         <Menu pointing secondary>
           <Link to='/'>
-            <Menu.Item name='home' />
+            <Image src='./images/FirehouseBWlogo.png' size='small'/>
           </Link>
-          <Link to='#'>
+          <Link to='/menu'>
             <Menu.Item name='menu'/>
           </Link>
           <Link to='/about'>
