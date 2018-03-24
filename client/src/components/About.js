@@ -7,6 +7,7 @@ import {
   Segment,
   Grid,
   Card,
+  Transition,
  } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
@@ -53,9 +54,7 @@ class About extends Component {
               <a href="https://www.google.com/maps/place/565+Firehouse/@40.7256923,-111.8769849,17z/data=!3m1!4b1!4m5!3m4!1s0x87528ab9882e4d53:0xf67f854b36163cf6!8m2!3d40.7256923!4d-111.8747962" >
                 Directions
               </a>
-
               <Header as="h4">Upcoming Events</Header>
-
             <div>
               <Header as="h4">Follow Us</Header>
               <a href="https://twitter.com/BubbasFirehouse">
@@ -67,7 +66,15 @@ class About extends Component {
             </div>
           </div>
         </Card>
+      <div>
+        <Container>
+          <Grid.Column width={4}>
+            <img src="../images/foodplates.jpg"/>
+            <img src="../images/stuff.jpg"/>
+          </Grid.Column>
+        </Container>
       </div>
+    </div>
     )
   }
 }
