@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import NoMatch from './NoMatch';
-// import NavBar from './NavBar';
+import NavBar from './NavBar';
 import Login from './Login';
-import Profile from './Profile';
 import About from './About';
-import AuthRoute from './AuthRoute';
+import Menu from './Menu'
 import Register from './Register';
 import Flash from './Flash';
 import Home from './Home';
-import Menu from './Menu'
 import ProtectedRoute from './ProtectedRoute';
+import AuthRoute from './AuthRoute';
 import FetchUser from './FetchUser';
 import { Switch, Route } from 'react-router-dom';
 
@@ -17,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <div>
-
+        <NavBar />
         <Flash />
         <FetchUser>
           <Switch>
@@ -26,7 +25,6 @@ class App extends Component {
             <AuthRoute exact path='/login' component={Login} />
             <AuthRoute exact path='/register' component={Register} />
             <Route exact path='/about' component={About} />
-            <ProtectedRoute exact path='/profile' component={Profile} />
             <Route component={NoMatch} />
           </Switch>
         </FetchUser>

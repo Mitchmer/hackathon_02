@@ -4,6 +4,7 @@ import TableBody, { Header, Container, Table, Image, Button, Segment, Divider} f
 import Order from './Order';
 import { getItems } from '../actions/items';
 
+
 class Menu extends React.Component {
   state = { cart: [] }
 
@@ -17,17 +18,17 @@ class Menu extends React.Component {
   }
 
 
-  
+
   items = () => {
     const { items } = this.props
   }
-  
+
   render() {
 
     const { items } = this.props
     return (
       <Container textAlign="center">
-        
+
         <Table striped>
           <Table.Header>
             <Table.Row>
@@ -36,7 +37,7 @@ class Menu extends React.Component {
               <Table.HeaderCell>Add To Cart</Table.HeaderCell>
             </Table.Row>
           </Table.Header>
-        
+
           {items.map( item =>
             <Table.Body key={item.id}>
               <Table.Row>
