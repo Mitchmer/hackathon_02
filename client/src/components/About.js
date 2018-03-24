@@ -6,19 +6,22 @@ import {
   Divider,
   Segment,
   Grid,
+  Card,
  } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
 class About extends Component {
   render () {
     return (
-      <div>
+      <div >
         <Container class="ui container" >
           <br/>
           <Header as="h1" textAlign="center">About Us</Header>
         </Container>
-        <Segment>
-          <Header as="h4" textAlign="Left">Basic Info</Header>
+        <Card centered>
+          <div textAlign="center">
+            <br/>
+            <Header as="h4" textAlign="Left">Basic Info</Header>
             <div >
               565 E 2100 S 
             <br/>
@@ -34,19 +37,20 @@ class About extends Component {
               <a href="https://www.google.com/maps/place/565+Firehouse/@40.7256923,-111.8769849,17z/data=!3m1!4b1!4m5!3m4!1s0x87528ab9882e4d53:0xf67f854b36163cf6!8m2!3d40.7256923!4d-111.8747962" >
                 Directions
               </a>
-        </Segment>
-        <Segment>
-          <Header as="h4">Upcoming Events</Header>
-        </Segment>
-        <Segment>
-          <Header as="h4">Follow Us</Header>
-          <a href="https://twitter.com/BubbasFirehouse">
-            <img src="../images/twitter.png" alt="twitter" width="50" height="50"/>
-          </a>
-          <a href="https://www.yelp.com/search?find_desc=bubba%27s+Firehouse+BBQ&find_loc=Highland%2C+UT&ns=1">
-            <img src="../images/yelp.png" alt="yelp" width="50" height="50" />
-          </a>
-        </Segment>
+            
+              <Header as="h4">Upcoming Events</Header>
+            
+            <div>
+              <Header as="h4">Follow Us</Header>
+              <a href="https://twitter.com/BubbasFirehouse">
+                <img src="../images/twitter.png" alt="twitter" width="50" height="50"/>
+              </a>
+              <a href="https://www.yelp.com/search?find_desc=bubba%27s+Firehouse+BBQ&find_loc=Highland%2C+UT&ns=1">
+                <img src="../images/yelp.png" alt="yelp" width="50" height="50" />
+              </a>
+            </div>
+          </div>
+        </Card>
       </div>
     )
   }
