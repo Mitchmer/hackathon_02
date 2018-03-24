@@ -1,8 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { List, Header, Divider } from 'semantic-ui-react'
-import { getItems } from '../actions/items';
-import Menu from './Menu';
+import { List, Form, Divider, Grid, Button } from 'semantic-ui-react'
+import { getItems } from '../actions/items'
 
 class Order extends React.Component {
   state = { order: [] }
@@ -16,30 +15,13 @@ class Order extends React.Component {
 
     const { items } = this.props
     return (
-      <div>
-          {
-            items.map( item =>
-            <List>
-              <List.Item>
-                <Header as="h3">
-                  {item.name}
-                </Header>
-                <Header as="h4">
-                  {item.price}
-                </Header>
-              </List.Item>
-              
-            </List>
-          )}
-          <Divider />
-          {/* {order.map} */}
-      </div>
+      <div></div>
     )
   }
 }
 
 const mapStateToProps = (state) => {
-  return { items: state.items }
+  return { items: state.items, user: state.user }
 }
 
 export default connect(mapStateToProps)(Order)
