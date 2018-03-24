@@ -1,16 +1,19 @@
-import { React, Component } from 'react';
+import React from 'react';
 import { Header, Container, Card, Image, Button, Segment, Divider } from 'semantic-ui-react';
 
 
-class Menu extends Component {
+class Menu extends React.Component {
   state = { name: '', price: '' }
+
 
   handleSubmit = (e) => {
 
   }
 
+  componentDidMount() 
+
   items = () => {
-    const { items } = this.props;
+    // const { items } = this.props;
 
     return items.map( item =>
       <Card key={item.id}>
@@ -24,7 +27,9 @@ class Menu extends Component {
         </Card.Meta>
       </Card.Content>
       <Card.Content extra>
-        <Button >Add To Cart</Button>
+        <Button 
+          // handlesubmit button
+        >Add To Cart</Button>
       </Card.Content>
     </Card>
     )
@@ -43,5 +48,6 @@ class Menu extends Component {
     )
   }
 }
+
 
 export default Menu;
