@@ -1,20 +1,23 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { List } from 'semantic-ui-react'
+import { List, Header, Divider } from 'semantic-ui-react'
+import { getItems } from '../actions/items'
 
 class Order extends React.Component {
   state = { order: [] }
 
   componentDidMount() {
     this.props.dispatch(getItems())
+    debugger
   }
 
   render() {
+
     const { items } = this.props
-    const { }
     return (
       <div>
-          {items.map( item =>
+          {
+            items.map( item =>
             <List>
               <List.Item>
                 <Header as="h3">
@@ -28,14 +31,14 @@ class Order extends React.Component {
             </List>
           )}
           <Divider />
-          {order.map}
+          {/* {order.map} */}
       </div>
     )
   }
 }
 
 const mapStateToProps = (state) => {
-  return { items: state.items, user: state.user.id }
+  return { items: state.items }
 }
 
 export default connect(mapStateToProps)(Order)

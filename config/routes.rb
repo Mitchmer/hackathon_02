@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     end
   end
 
-  get '/api/items', to: 'items#menu_items'
+  get '/api/items', to: 'api/items#menu_items'
   #Do not place any routes below this one
   get '*other', to: 'static#index'
 end

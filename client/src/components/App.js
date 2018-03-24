@@ -4,12 +4,11 @@ import NavBar from './NavBar';
 import Login from './Login';
 import About from './About';
 import AuthRoute from './AuthRoute'
-import FetchUser from './FetchUser'
 import Register from './Register';
 import Flash from './Flash';
 import Home from './Home';
+import Menu from './Menu'
 import ProtectedRoute from './ProtectedRoute';
-import AuthRoute from './AuthRoute';
 import FetchUser from './FetchUser';
 import { Switch, Route } from 'react-router-dom';
 

@@ -7,14 +7,12 @@ class Api::ItemsController < ApplicationController
   end
 
   def menu_items
+    # render json: Item.all
     render json: Item.set_menu
+
   end
 
   private 
-    def set_item
-      Item.set_menu
-      @item = Item.find(params[:id])
-    end
 
     def item_params
       params.require(:item).permit(:name, :price)
