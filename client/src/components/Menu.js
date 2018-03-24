@@ -27,7 +27,6 @@ class Menu extends React.Component {
     const { items } = this.props
     return (
       <Container textAlign="center">
-      <img class="ui fluid image" src="https://lh3.googleusercontent.com/HvRBXh7Ueh2JhKWVUsOY7XXGVBXyVHPYBPAWa_vGiNGqrDLHO99Z26P_8eJ5a6_NM1pkX7glzUrLrnc=w4032-h2268-rw-no" />
         
         <Table striped>
           <Table.Header>

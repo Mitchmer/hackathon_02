@@ -40,16 +40,12 @@ class About extends Component {
         </Segment>
         <Segment>
           <Header as="h4">Follow Us</Header>
-<<<<<<< HEAD
           <a href="https://twitter.com/BubbasFirehouse">
             <img src="../images/twitter.png" alt="twitter" width="50" height="50"/>
           </a>
           <a href="https://www.yelp.com/search?find_desc=bubba%27s+Firehouse+BBQ&find_loc=Highland%2C+UT&ns=1">
             <img src="../images/yelp.png" alt="yelp" width="50" height="50" />
           </a>
-=======
-          <img src="" alt="Girl in a jacket"/>
->>>>>>> syle
         </Segment>
       </div>
     )
