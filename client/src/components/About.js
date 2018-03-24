@@ -19,6 +19,22 @@ class About extends Component {
           <Header as="h1" textAlign="center">About Us</Header>
         </Container>
         <Card centered>
+        A long, long time ago
+        In a galaxy far away
+        Naboo was under an attack
+        And I thought me and Qui-Gon Jinn
+        Could talk the Federation into
+        Maybe cutting them a little slack
+        But their response, it didn't thrill us
+        They locked the doors and tried to kill us
+        We escaped from that gas
+        Then met Jar Jar and Boss Nass
+        We took a bongo from the scene
+        And we went to Theed to see the Queen
+        We all wound up on Tatooine
+        That's where we found this boy...
+        </Card>
+        <Card centered>
           <div textAlign="center">
             <br/>
             <Header as="h4" textAlign="Left">Basic Info</Header>
