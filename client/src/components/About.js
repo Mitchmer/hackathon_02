@@ -37,7 +37,9 @@ class About extends Component {
         </Segment>
         <Segment>
           <Header as="h4">Follow Us</Header>
-          <img src="" alt="Girl in a jacket"/>
+          <a href="https://twitter.com/BubbasFirehouse">
+            <img src="../images/twitter.png" alt="twitter" width="100" height="100"/>
+          </a>
         </Segment>
       </div>
     )
