@@ -5,8 +5,13 @@ import { List } from 'semantic-ui-react'
 class Order extends React.Component {
   state = { order: [] }
 
+  componentDidMount() {
+    this.props.dispatch(getItems())
+  }
+
   render() {
     const { items } = this.props
+    const { }
     return (
       <div>
           {items.map( item =>
@@ -19,9 +24,11 @@ class Order extends React.Component {
                   {item.price}
                 </Header>
               </List.Item>
-              <Divider />
+              
             </List>
           )}
+          <Divider />
+          {order.map}
       </div>
     )
   }

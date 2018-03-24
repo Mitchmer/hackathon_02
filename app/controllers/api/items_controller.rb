@@ -3,12 +3,16 @@ class Api::ItemsController < ApplicationController
   before_action :set_item, only: [:show]
   
   def index
-    render json: Item.set_name
+    render json: Item.all
+  end
+
+  def menu_items
+    render json: Item.set_menu
   end
 
   private 
     def set_item
-      Item.set_name
+      Item.set_menu
       @item = Item.find(params[:id])
     end
 

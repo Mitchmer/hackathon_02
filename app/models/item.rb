@@ -1,3 +1,10 @@
 class Item < ApplicationRecord
-  belongs_to :user
+  belongs_to :order, optional: true
+
+  def self.set_menu
+    Item.find_by_sql('
+      SELECT items.name, items.price, items.id
+      FROM items
+    ')
+  end
 end
