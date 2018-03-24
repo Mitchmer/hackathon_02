@@ -7,6 +7,10 @@ import Menu from './Menu'
 import Register from './Register';
 import Flash from './Flash';
 import Home from './Home';
+<<<<<<< HEAD
+=======
+import RealMenu from './RealMenu'
+>>>>>>> realmenu
 import ProtectedRoute from './ProtectedRoute';
 import AuthRoute from './AuthRoute';
 import FetchUser from './FetchUser';
@@ -21,7 +25,7 @@ class App extends Component {
         <FetchUser>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route exact path='/menu' component={Menu} />
+            <Route exact path='/realmenu' component={RealMenu} />
             <AuthRoute exact path='/login' component={Login} />
             <AuthRoute exact path='/register' component={Register} />
             <Route exact path='/about' component={About} />

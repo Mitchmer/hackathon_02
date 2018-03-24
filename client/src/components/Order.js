@@ -4,7 +4,7 @@ import { List, Form, Divider, Grid, Button } from 'semantic-ui-react'
 import { getItems } from '../actions/items'
 
 class Order extends React.Component {
-  state = { order: [] }
+  state = { cart: [] }
 
   componentDidMount() {
     this.props.dispatch(getItems())
